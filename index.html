@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,800;1,6..12,200;1,6..12,400;1,6..12,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,800;1,6..12,200;1,6..12,400;1,6..12,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- modal -->
+    <aside class="modal">
+      <button class="material-symbols-outlined"> close </button>
+
+      <div class="wrapper">
+        <form class="form-addbook">
+          <h2 class="form-addbook-heading">Add your book</h2>
+          <input
+            type="text"
+            class="form-control"
+            name="title"
+            placeholder="Book title.."
+            required
+            autofocus
+          />
+          <input
+            type="text"
+            class="form-control"
+            name="author"
+            placeholder="Author.."
+            required=""
+          />
+          <input
+            type="number"
+            min="10"
+            max="4000"
+            class="form-control"
+            name="pages"
+            placeholder="Pages.."
+            required=""
+          />
+          <label class="checkbox">
+            <input type="checkbox" value="read" id="read" name="read" /> Have
+            read?
+          </label>
+          <button class="btn" type="submit">Add</button>
+        </form>
+      </div>
+    </aside>
+    <!-- header -->
+    <header>
+      <h1><em>My Library</em></h1>
+      <button class="addBtn">
+        <span class="material-symbols-outlined"> library_add </span>Add Book
+      </button>
+    </header>
+
+    <!-- main content -->
+    <main>
+
+      <figure class="card">
+        <div class="remove"><span>Remove</span></div>
+        <figcaption>
+          <h3>Harry Potter (example)</h3>
+          <p>Author: J.K. Rowling</p>
+          <div class="pages">
+            <p>Pages: 299</p>
+          </div>
+          <div class="read">
+            Read: not yet
+          </div>
+        </figcaption>
+      </figure>
+
+    </main>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
